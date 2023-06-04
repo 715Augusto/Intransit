@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradiente_back">
+
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="67dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_redonda_"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#00FFFFFF"
+        android:text="Cadastro Aluno"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.362"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.039" />
+
+    <TextView
+        android:id="@+id/titulo_nomecompleto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Nome Completo"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.208"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/nome_completo"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_nomecompleto"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/titulo_matricula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="15dp"
+        android:text="Matricula"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nome_completo"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/cod_matricula"
+        android:layout_width="145dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="5dp"
+        android:autoText="false"
+        android:background="#FBFBFB"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.199"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_matricula"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/titulo_rg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="15dp"
+        android:text="RG"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/titulo_matricula"
+        app:layout_constraintTop_toBottomOf="@+id/nome_completo"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/rg"
+        android:layout_width="145dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="5dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.205"
+        app:layout_constraintStart_toEndOf="@+id/cod_matricula"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_rg"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/titulo_telefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="15dp"
+        android:text="Telefone"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cod_matricula"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/numero_telefone"
+        android:layout_width="145dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="5dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNumber5"
+        app:layout_constraintHorizontal_bias="0.808"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_telefone"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/titulo_cep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="15dp"
+        android:text="CEP"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/titulo_telefone"
+        app:layout_constraintTop_toBottomOf="@+id/rg"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextNumber5"
+        android:layout_width="146dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="52dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_cep"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/titulo_logradouro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="15dp"
+        android:text="Logradouro"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numero_telefone"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/logradouro"
+        android:layout_width="148dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/complemento"
+        app:layout_constraintHorizontal_bias="0.859"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_logradouro"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/titulo_complemento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="15dp"
+        android:text="Complemento"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/titulo_logradouro"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber5"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/complemento"
+        android:layout_width="147dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="52dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_complemento"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/titulo_instituicao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="15dp"
+        android:text="Instituição"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logradouro"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/instituicao"
+        android:layout_width="306dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_instituicao"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/titulo_senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="15dp"
+        android:text="Senha"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instituicao"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/senha"
+        android:layout_width="143dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="5dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/confirmar_senha"
+        app:layout_constraintHorizontal_bias="0.739"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_senha"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/titulo_confirmar_senha"
+        android:layout_width="160dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="15dp"
+        android:text="Confirmar Senha"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.753"
+        app:layout_constraintStart_toEndOf="@+id/titulo_senha"
+        app:layout_constraintTop_toBottomOf="@+id/instituicao"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/confirmar_senha"
+        android:layout_width="143dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="52dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_confirmar_senha"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/titulo_codigorota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="15dp"
+        android:text="Código da Rota"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/senha"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/codigo_rota"
+        android:layout_width="142dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="5dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_codigorota"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="104dp"
+        android:layout_height="40dp"
+        android:background="#D637D4"
+        android:text="ENVIAR"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:backgroundTint="#D637D4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.398"
+        app:layout_constraintStart_toEndOf="@+id/codigo_rota"
+        app:layout_constraintTop_toBottomOf="@+id/confirmar_senha"
+        app:layout_constraintVertical_bias="0.433"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/voltar2"
+        android:layout_width="74dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:background="#D637D4"
+        android:text="Voltar"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        app:backgroundTint="#D637D4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/gradiente_back"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="230dp"
+        android:layout_height="227dp"
+        android:layout_marginTop="40dp"
+        app:srcCompat="@drawable/logo_redonda_" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Login / Matrícula"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/insert_usuario"
+        android:layout_width="307dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:hint="Usuário"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/white" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Senha"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/insert_senha"
+        android:layout_width="307dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/white" />
+
+    <CheckBox
+        android:id="@+id/mostrar_senha"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="55dp"
+        android:buttonTint="@color/black"
+        android:minHeight="48dp"
+        android:text="Exibir senha"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <Button
+        android:id="@+id/botao_de_login"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/rosa"
+        android:text="Entrar"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/botao_de_voltar"
+        android:layout_width="112dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/rosa"
+        android:text="Voltar"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/white"
+        android:indeterminate="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/barra_de_carregamento"
+        android:visibility="invisible"
+        />
+
+
+</LinearLayout>

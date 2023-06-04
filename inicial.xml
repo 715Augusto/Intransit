@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradiente_back">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="163dp"
+        android:layout_height="156dp"
+        android:layout_marginTop="132dp"
+        android:src="@drawable/logo_redonda_"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Paralogin"
+        android:layout_width="145dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="130dp"
+        android:backgroundTint="#D637D4"
+        android:padding="10dp"
+        android:text="Login"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/Paracadastro"
+        android:layout_width="151dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#D637D4"
+        android:text="Primeiro Acesso"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Paralogin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

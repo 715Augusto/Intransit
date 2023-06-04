@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="410dp"
+        android:layout_height="637dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="93dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.6"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo_redonda_"
+        app:layout_constraintBottom_toBottomOf="@+id/space"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-1dp" />
+
+    <Button
+        android:id="@+id/Para_Hist"
+        android:layout_width="181dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/rosa"
+        android:text="Historico de Viagem"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.208"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/Para_Loc"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/Para_Chat"
+        android:layout_width="181dp"
+        android:layout_height="51dp"
+        android:backgroundTint="@color/rosa"
+        android:text="Chat da Rota"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.208"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/Para_Hist"
+        app:layout_constraintVertical_bias="0.245"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/Para_Loc"
+        android:layout_width="181dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="@color/rosa"
+        android:text="Localização em Tempo Real"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.204"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="409dp"
+        android:layout_height="92dp"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/nome_do_usuario"
+            android:layout_width="133dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="" />
+
+        <Button
+            android:id="@+id/Sair"
+            android:layout_width="8dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/rosa"
+            android:text="Sair"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
